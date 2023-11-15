@@ -1,0 +1,22 @@
+---
+- alias: foo
+  host: 0.0.0.0
+  port: 22
+  user: user
+  password: changeme
+  pairs:
+    - direction: L
+      local: 3000
+      remote: 3000
+    - direction: R
+      local: 4000
+      remote: 3050
+- alias: bar
+  host: 0.0.0.0
+  port: 22
+  user: root
+  private_key: /home/john/.ssh/id_rsa
+  pairs:
+    - direction: L
+      local: 3000
+      remote: 3000
